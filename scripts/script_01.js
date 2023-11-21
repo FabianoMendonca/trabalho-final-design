@@ -25,7 +25,7 @@ export async function Exercicio01(){
         
         countryList.forEach((element)=>{
             if(element.nome_pais == select_country){
-                console.log(element)
+                // console.log(element)
                 selectField.innerHTML = 
                 `
                 Nome Internacional: ${element.nome_pais_int} <br>
