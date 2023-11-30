@@ -45,6 +45,9 @@ exercícios em seções bem distintas.<p>
         Promisse.all. Acessar o retorno de Promisse.all e mostrar os dados das 3 apis (não o json).
         Mostrar o retorno de todas as promessas ou a mensagem de erro da última promessa
         rejeitada.
+
+````
+
     Em algum ponto da página (Pode ser em qualquer exercício anterior ou se for necessário pode ser
     criado um exercício novo):
         • Utilize uma atribuição do tipo destructuring.
@@ -60,18 +63,20 @@ exercícios em seções bem distintas.<p>
         chamadas podem retornar erro. Também procure evitar demais erros que possam ser
         cometidos pelos usuários.
         • Disponibilizar o sistema no Github
-    Mais APIs:
-        - https://deividfortuna.github.io/fipe/ Esta API mostra dados de preços de carros vendidos no Brasil.
-        - https://jsonplaceholder.typicode.com/guide/ é uma API com dados Fake para testes.
-        - Em https://swapi.dev/documentation tem uma documentação para uma api que conforme o
-        endereço ela retorna a correspondente informação sobre o universo Star Wars (...é só procurar que
-        tem api de tudo por ai….coloque no google “API Marvel” e veja o que acha…). Aqui vai uma lista
-        de APIs interessantes https://devporai.com.br/9-apis-para-seu-novo-projeto/
-        - https://github.com/public-apis/public-apis lista de APIs.
+
+`````   
+Mais APIs:
+    - https://deividfortuna.github.io/fipe/ Esta API mostra dados de preços de carros vendidos no Brasil.
+    - https://jsonplaceholder.typicode.com/guide/ é uma API com dados Fake para testes.
+    - Em https://swapi.dev/documentation tem uma documentação para uma api que conforme o
+    endereço ela retorna a correspondente informação sobre o universo Star Wars (...é só procurar que
+    tem api de tudo por ai….coloque no google “API Marvel” e veja o que acha…). Aqui vai uma lista
+    de APIs interessantes https://devporai.com.br/9-apis-para-seu-novo-projeto/
+    - https://github.com/public-apis/public-apis lista de APIs.
 
         ---------------
+`````
 
-````
 <span>O trabalho deve ser entregue até <strong>30/11/2023</strong>. Para tanto deve-se informar no SIGAA o endereço da hospedagem e do repositório das páginas no Github.</span>
 
 <span>No dia <strong>01/12/2023</strong> o trabalho será apresentado em aula.</span>
