@@ -1,6 +1,8 @@
 import { selectEx } from "./scripts/utils.js";
 import { Exercicio01 } from "./scripts/script_01.js";
 import { Exercicio02 } from "./scripts/script_02.js";
+import { Exercicio03 } from "./scripts/script_03.js";
+import { Exercicio04 } from "./scripts/script_04.js";
 
 
 
@@ -21,12 +23,17 @@ linkEx02.addEventListener('click', ()=>{selectEx(2)});
     
 linkEx02.addEventListener('click', () =>{
     Exercicio02();
-    let butn = document.querySelector('#attButtonReq01')
-    butn.addEventListener('click', ()=>{Exercicio02()})
+});
+
+linkEx03.addEventListener('click', ()=>{selectEx(3)});
+    
+linkEx03.addEventListener('click', () =>{
+    Exercicio03();
 });
 
 
-
-    
-linkEx03.addEventListener('click', ()=>{selectEx(3)})
 linkEx04.addEventListener('click', ()=>{selectEx(4)})
+
+linkEx04.addEventListener('click', () =>{
+    Exercicio04();
+});

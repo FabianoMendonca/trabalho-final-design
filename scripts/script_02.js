@@ -26,8 +26,21 @@ async function consulta2(){
     });
 }
 
-function consulta3(){
-
+async function consulta3(){
+    let previsao = await getClima();
+    // console.log(previsao)
+    let p = document.querySelector('#consultaClimaP');
+    p.innerHTML = `<h6>${previsao.cidade}, ${previsao.estado}.</h6>`
+    p.innerHTML += `<span>Atualizada em : ${previsao.atualizado_em}</span>`
+    previsao.clima.forEach( element => {
+        p.innerHTML += `<div class="border border-light rounded bg-secondary text-white" style="padding:8px; margin: 4px;">
+            <h6>Dia : ${element.data}</h6>
+            condição : ${element.condicao_desc}<br>
+            indice UV: ${element.indice_uv}<br>
+            minima : ${element.min}<br>
+            </div>
+            `
+    })
 }
 
 function consulta6 (){
@@ -90,5 +103,19 @@ async function getFeriados(){
     } catch (error) {
         console.log(error);
         return error;
+    }
+}
+
+async function getClima(){
+    const cidadeID = 4397;
+    
+    try {
+
+        let res = await fetch (`https://brasilapi.com.br/api/cptec/v1/clima/previsao/${cidadeID}/5`);
+        let clima = res.json();
+        // console.log(clima)
+        return clima;
+    } catch (error) {
+        
     }
 }
