@@ -8,7 +8,8 @@ export async function Exercicio02(){
 async function consulta1(){
     let p = document.querySelector('#consulta-taxas-p')
     let taxas = await getTaxas();
-    // console.log(taxas)
+
+    //destructuring
     let [selic, cdi, ipca] = taxas;
     p.innerHTML = `
         ${selic.nome} : ${selic.valor} <br>
