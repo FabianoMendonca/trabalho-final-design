@@ -65,7 +65,7 @@ Em todos casos utilize o comando fetch e proteja as chamadas com try/catch ou th
         <li><a href="http://www.ipeadata.gov.br/api/odata4/Metadados('ABATE_ABPEAV')" >http://www.ipeadata.gov.br/api/odata4/Metadados('ABATE_ABPEAV')</a></li>
         <li><a href="http://www.ipeadata.gov.br/api/odata4/Metadados('ABATE_ABPEAV')/Valores/">(http://www.ipeadata.gov.br/api/odata4/Metadados('ABATE_ABPEAV')/Valores/)</a></li>
     </ul>
-    <span>Resposta: </span>
+<!--     <span>Resposta: </span> -->
 </div>
 
 <div style=' background: rgba(0, 0, 0, 0.2);
