@@ -70,12 +70,7 @@ function consulta4(){
         return false;
     });
 }
-// cep: "96202650"
-// city: "Rio Grande"
-// neighborhood: "Nossa Senhora dos Navegantes"
-// service: "correios"
-// state: "RS"
-// street: "Rua Américo Vespucio"
+
 function consulta5(){
     
     let select = document.querySelector("#ufSelect")
