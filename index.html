@@ -42,9 +42,9 @@
 
 
       <!-- Exercicio 2 -->
-      <main class="container-fluid"  style="display: none;"  id="mainEx-02">
+      <main class="container-fluid"  style="display: none; padding: 10px 10px;"  id="mainEx-02">
         <H1>EXERCICIO 2</H1>
-        <div class="card">
+        <div class="card" style="margin: 6px 8px;">
             <div class="card-header">
               Consulta-01
             </div>
@@ -53,58 +53,93 @@
               <p class="card-text" id="consulta-taxas-p"></p>
             </div>
           </div>
-          <div class="card">
-              <div class="card-header">
-                Consulta-02
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Consulta de Feriados</h5>
-                <p class="card-text" id="consultaFeriadosP"></p>
-              </div>
+        <div class="card" style="margin: 6px 8px;">
+            <div class="card-header">
+              Consulta-02
             </div>
-          <div class="card">
-              <div class="card-header">
-                Consulta-03
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Consulta do clima em Rio Grande</h5>
-                <p class="card-text" id="consultaClimaP"></p>
-              </div>
+            <div class="card-body">
+              <h5 class="card-title">Consulta de Feriados</h5>
+              <p class="card-text" id="consultaFeriadosP"></p>
             </div>
-          <div class="card">
-              <div class="card-header">
-                Consulta-04
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Consulta de Taxas</h5>
-                <p class="card-text" id="consulta-02"></p>
-                <a href="#" class="btn btn-secondary">Atualizar</a>
-              </div>
+          </div>
+        <div class="card" style="margin: 6px 8px;">
+            <div class="card-header">
+              Consulta-03
             </div>
-          <div class="card">
-              <div class="card-header">
-                Consulta-05
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Consulta de Taxas</h5>
-                <p class="card-text" id="consulta-02"></p>
-                <a href="#" class="btn btn-secondary">Atualizar</a>
-              </div>
+            <div class="card-body">
+              <h5 class="card-title">Consulta do clima em Rio Grande</h5>
+              <p class="card-text" id="consultaClimaP"></p>
             </div>
-          <div class="card">
-              <div class="card-header">
-                Consulta-06
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Consulta de dominio</h5>
-                <P id="consultaDomainP"></P>
-                <form class="d-flex" style="width: clamp(340px, 40%, 450px);" role="search">
-                    <input class="form-control me-2" type="search" id="searchInputEx02" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary" id="searchButtonEx02" type="submit">Pesquisar</button>
-                </form>
-                <p class="card-text" id="consulta-06"></p>
-              </div>
+          </div>
+        <div class="card" style="margin: 6px 8px;">
+            <div class="card-header">
+              Consulta-04
             </div>
+            <div class="card-body">
+              <h5 class="card-title">Consultar CEP</h5>
+              <form class="d-flex" style="width: clamp(340px, 40%, 450px);" role="search">
+                <input class="form-control me-2" type="number" id="searchInputC4" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary" id="searchButtonC4" type="submit">Pesquisar</button>
+            </form>
+            <p class="card-text" id="consulta-04"></p>
+            </div>
+          </div>
+        <div class="card" style="margin: 6px 8px;">
+            <div class="card-header">
+              Consulta-05
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Consulta 5</h5>
+              <p class="card-text" id="consulta-05"></p>
+              <form class="d-flex" style="width: clamp(340px, 40%, 450px);" role="search">
+                <label for="ufSelect" style="padding: 4px; margin:4px">Selecione uma UF:</label>
+                  <select id="ufSelect">
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+                  </select>
+                <button class="btn btn-outline-secondary" id="searchButtonC5" type="submit">Pesquisar</button>
+            </form>
+            </div>
+          </div>
+        <div class="card" style="margin: 6px 8px;">
+            <div class="card-header">
+              Consulta-06
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Consulta de dominio</h5>
+              <P id="consultaDomainP"></P>
+              <form class="d-flex" style="width: clamp(340px, 40%, 450px);" role="search">
+                  <input class="form-control me-2" type="search" id="searchInputEx02" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-secondary" id="searchButtonEx02" type="submit">Pesquisar</button>
+              </form>
+              <p class="card-text" id="consulta-06"></p>
+            </div>
+          </div>
         </main>
 
 

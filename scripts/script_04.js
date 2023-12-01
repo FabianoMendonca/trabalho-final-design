@@ -9,7 +9,7 @@ export async function Exercicio04(){
           document.querySelector("#promissesAny").innerHTML = ''  
          Promise.any([promisseUm(),promisseDois(),promisseTres()]).then((values)=>{
             console.log(values)
-            document.querySelector("#promissesAny").innerHTML += `Resultado da promisse: ${n} <br>${values}`
+            document.querySelector("#promissesAny").innerHTML += `Resultado da promisse: ${values.status}<br> ${values.url}`
          })    
         } catch (error) {
             
@@ -22,7 +22,7 @@ export async function Exercicio04(){
             document.querySelector("#promissesRace").innerHTML = ''  
            Promise.race([promisseUm(),promisseDois(),promisseTres()]).then((values)=>{
               console.log(values)
-              document.querySelector("#promissesRace").innerHTML += `Resultado da promisse: <br>${values}`
+              document.querySelector("#promissesRace").innerHTML += `Resultado da Race: ${values.url} <br>`
            })    
           } catch (error) {
               
@@ -33,8 +33,9 @@ export async function Exercicio04(){
         try {
             document.querySelector("#promissesAll").innerHTML = ''  
            Promise.all([promisseUm(),promisseDois(),promisseTres()]).then((values)=>{
-              console.log(values)
-              document.querySelector("#promissesAll").innerHTML += `Resultado da promisse: <br>${values}`
+              values.forEach((value)=>{
+                  document.querySelector("#promissesAll").innerHTML += `Resultado da ALL:${value.url}<br>Status:${value.status} <br>`
+              })
            })    
           } catch (error) {
               
